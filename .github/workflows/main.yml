@@ -1,0 +1,13 @@
+name: Mensaje de bienvenida
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  imprimir_mensaje:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Imprimir mensaje
+        run: echo "¡Hola, GitHub Actions!"
